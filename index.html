@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryCraft Studio ✨ by Dominion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>StoryCraft Studio ✨</h1>
+    <p>Write your world. Share your sparkle.</p>
+    <nav class="tab-nav">
+      <button data-tab="story">📝 Story Builder</button>
+      <button data-tab="character">🎨 Character Creator</button>
+      <button data-tab="zine">📚 Zine Maker</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="story" class="tab-content active">
+      <h2>📝 Story Builder</h2>
+      <label for="storyPrompt">Start your magical tale:</label>
+      <textarea id="storyPrompt" placeholder="Once upon a time..."></textarea>
+      <button id="continueStoryBtn">Continue Story</button>
+    </section>
+
+    <section id="character" class="tab-content">
+      <h2>🎨 Character Creator</h2>
+      <p>Design your hero using a kid-friendly tool:</p>
+      <a href="https://openart.ai/generator/kid" target="_blank" class="external-button">Create a Kid Character</a>
+    </section>
+
+    <section id="zine" class="tab-content">
+      <h2>📚 Zine Maker</h2>
+      <p>Make a fun printable zine:</p>
+      <a href="https://zinesforever.com/" target="_blank" class="external-button">Make a Zine</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 StoryCraft Studio by Dominion

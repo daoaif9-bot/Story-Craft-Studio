@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #ffb6c1, #dda0dd);
+  padding: 2rem 1rem;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tab-nav {
+  margin-top: 1rem;
+}
+
+.tab-nav button {
+  margin: 0 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #dda0dd;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tab-nav button:hover {
+  background: #c080d0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.tab-content {
+  display: none;
+  padding: 2rem;
+  border-top: 2px dashed #dda0dd;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+textarea, input, select {
+  display: block;
+  margin: 0.5rem auto 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button, .external-button {
+  background: #ffb6c1;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+button:hover, .external-button:hover {
+  background: #ffa0b0;
+}
+
+footer {
+  background: #f8e8ff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
