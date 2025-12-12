@@ -12,10 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Story Builder: generate a full story paragraph from scratch
-  document.getElementById("continueStoryBtn").addEventListener("click", () => {
-    const storyBox = document.getElementById("storyPrompt");
+  // Story Builder
+  const continueBtn = document.getElementById("continueStoryBtn");
+  const storyBox = document.getElementById("storyPrompt");
+  const storyOutput = document.getElementById("storyOutput");
 
+  continueBtn.addEventListener("click", () => {
     const subjects = ["She", "He", "They", "The cat", "A girl", "An explorer", "The robot"];
     const verbs = ["found", "entered", "discovered", "followed", "built", "opened", "touched"];
     const objects = ["a glowing door", "a secret tunnel", "a floating island", "a magical book", "a talking tree", "a rainbow bridge", "a crystal orb"];
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     let paragraph = "";
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 3; i++) {
       const subject = subjects[Math.floor(Math.random() * subjects.length)];
       const verb = verbs[Math.floor(Math.random() * verbs.length)];
       const object = objects[Math.floor(Math.random() * objects.length)];
@@ -38,6 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
       paragraph += `${subject} ${verb} ${object} ${ending} `;
     }
 
+    // Append to textarea
     storyBox.value += "\n\n" + paragraph.trim();
+
+    // Show in output div for visual feedback
+    const p = document.createElement("p");
+    p.textContent = paragraph.trim();
+    storyOutput.appendChild(p);
   });
 });
